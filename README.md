@@ -109,6 +109,14 @@ wp-content/
 - ✅ **AJAX Filter**: Visit `archive-projects.php` and test filter dropdown
 
 ---
+## 🔒 Notes
+
+- Review .gitignore file
+- Keep Those Files in Localhost when you try to run this Project
+- Mention Database Details in wp-config.php
+- See .sql file for database
+
+---
 
 ## 🔒 Security Notes
 
