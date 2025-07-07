@@ -114,7 +114,6 @@ wp-content/
 - Review .gitignore file
 - Keep Those Files in Localhost when you try to run this Project
 - Mention Database Details in wp-config.php
-- See .sql file for database
 
 ---
 
