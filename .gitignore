@@ -1,0 +1,19 @@
+# Ignore WordPress core
+/wp-admin/
+/wp-includes/
+/wp-config.php
+
+# Ignore uploads and cache
+/wp-content/uploads/
+/wp-content/cache/
+/wp-content/upgrade/
+
+# Ignore log and system files
+*.log
+*.zip
+*.tar.gz
+*.sql
+.DS_Store
+node_modules
+vendor
+.env

@@ -1,0 +1,179 @@
+/*
+Theme Name: Twenty Twenty-Four Child
+Template: twentytwentyfour
+Version: 1.0
+*/
+
+@import url('../twentytwentyfour/style.css');
+
+/* Custom footer background */
+.site-footer {
+  background-color: #2a2a2a;
+}
+
+/* Responsive font size for mobile */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+}
+
+/* Header layout: desktop view */
+.wp-block-group.alignwide > .wp-block-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wp-block-group.alignwide .wp-block-group:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Logo max size */
+.wp-block-site-logo img {
+  max-height: 60px;
+}
+
+/* Navigation alignment */
+.wp-block-navigation {
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.wp-block-navigation a.focused {
+  outline: 2px solid #333;
+  background-color: #eee;
+}
+
+
+/* Responsive tweak for smaller screens */
+@media (max-width: 768px) {
+  .wp-block-group.alignwide > .wp-block-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wp-block-navigation {
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+footer.wp-block-template-part .wp-block-group {
+  background-color: #A7B9CC !important;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+/* Base dropdown styles */
+.wp-block-navigation .has-child > .wp-block-navigation__submenu-container {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 999;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+/* Show on hover or when JS makes it visible */
+.wp-block-navigation .has-child:hover > .wp-block-navigation__submenu-container,
+.wp-block-navigation .has-child:focus-within > .wp-block-navigation__submenu-container {
+  display: block;
+}
+
+/* Fix submenu position */
+.wp-block-navigation .has-child {
+  position: relative;
+}
+
+/* Indicate focus */
+.wp-block-navigation a:focus {
+  outline: 2px solid #333;
+}
+#project-filter {
+    margin-bottom: 20px;
+}
+.project-item {
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.team-member {
+    flex: 0 0 250px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    text-align: center;
+}
+.team-member img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.team-member h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+.bio {
+    font-size: 14px;
+    color: #555;
+}
+/* Custom Contact Form Styling */
+#custom-contact-form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 40px;
+  background: #f6f6f6;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#custom-contact-form input,
+#custom-contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#custom-contact-form button {
+  padding: 10px 20px;
+  background: #007cba;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#custom-contact-form button:hover {
+  background: #005fa3;
+}
+
+#form-loader {
+  margin-left: 10px;
+  color: #555;
+}
+
+#cc-response {
+  font-weight: bold;
+  margin-top: 15px;
+}
